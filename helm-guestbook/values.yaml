@@ -6,7 +6,7 @@ replicaCount: 1
 
 image:
   repository: gcr.io/google-samples/gb-frontend
-  tag: latest
+  tag: sample-public-image-v5-5be2e51
   pullPolicy: IfNotPresent
 
 containerPort: 80
