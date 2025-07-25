@@ -13,7 +13,7 @@ containerPort: 80
 
 service:
   type: ClusterIP
-  port: 8080
+  port: 9090
 
 ingress:
   enabled: false
