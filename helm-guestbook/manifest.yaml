@@ -45,7 +45,7 @@ spec:
         release: staging-helm-guestbook
     spec:
       containers:
-        - image: gcr.io/google-samples/gb-frontend:latest
+        - image: gcr.io/google-samples/gb-frontend:v5
           imagePullPolicy: IfNotPresent
           livenessProbe:
             httpGet:
