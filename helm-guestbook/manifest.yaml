@@ -18,7 +18,7 @@ spec:
   selector:
     app: helm-guestbook
     release: prod-helm-guestbook
-  type: ClusterIP
+  type: LoadBalancer
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -45,7 +45,7 @@ spec:
         release: prod-helm-guestbook
     spec:
       containers:
-        - image: gcr.io/google-samples/gb-frontend:sample-public-image-v5-5be2e51
+        - image: gcr.io/google-samples/gb-frontend:v5
           imagePullPolicy: IfNotPresent
           livenessProbe:
             httpGet:
