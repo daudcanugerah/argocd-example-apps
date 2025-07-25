@@ -12,8 +12,8 @@ image:
 containerPort: 80
 
 service:
-  type: LoadBalancer
-  port: 80
+  type: ClusterIP
+  port: 8080
 
 ingress:
   enabled: false
